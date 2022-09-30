@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Love</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    </head>
+    <body>
+        <h1>Daily Love</h1>
+        <h3>Assuntos diários</h3>
+        <div>
+            <input type="number" name="search" id="search" placeholder="Digite o ID do conteúdo desejado"
+            min="0" max="1">
+            <button onclick="searchContent()">Buscar</button>
+        </div>
+        <div>
+            <p id="contentID">ID do conteúdo</p>
+            <p id="contentTitle">Título do conteúdo</p>
+            <p id="contentType">Tipo de Conteúdo</p>
+            <p id="contentBody">Seu conteúdo aqui</p>
+            <a id="contentSrc" href="">Fonte do conteúdo</a>
+        </div>
+        <button onclick="getContent()">Gerar conteúdo</button>
+
+        <script src="./JS/content.js"></script>
+        <script src="./JS/script.js"></script>
+    </body>
+</html>
